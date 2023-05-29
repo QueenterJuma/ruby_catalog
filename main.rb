@@ -14,7 +14,7 @@ def list_options
   puts "0 - Exit"
 end
 
-def option(app)
+def options(app)
   option = gets.chomp.to_i
   case option
   when 1
@@ -46,12 +46,12 @@ end
 def main
   app = App.new
   app.load_data
+  puts 'Welcome to our App..'
 
   loop do
-    puts list_options
-    puts 'Welcome to our App..'
+    list_options
     print 'Please select an option:'
-    option = gets.chomp.to_i
-    option(app)
+    option = options(app)
+    break if option == 0
   end
 end
