@@ -3,7 +3,7 @@ class Game < Item
   attr_accessor :id, :name, :multiplayer, :last_played_at, :publish_date
 
   def initialize(name, last_played_at, publish_date, multiplayer)
-    super(nil, nil, nil, nil, publish_date)
+    super(publish_date)
     @id = id || Random.rand(1..1000)
     @name = name
     @multiplayer = multiplayer
