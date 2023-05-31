@@ -2,7 +2,7 @@ require_relative '../book'
 
 describe Book do
   before :each do
-       @book = Book.new('2023-05-24', 'publisher', 'coverstate')
+    @book = Book.new('2023-05-24', 'publisher', 'coverstate')
   end
 
   it 'checking Book instance' do
