@@ -26,16 +26,18 @@ end
 module LoadData
   def load_games
     games_data = load_data_from_json_file('./data/games.json')
-    games_data.map do |game_data|
+    games = games_data.map do |game_data|
       Game.new(game_data['name'], game_data['last_played_at'], game_data['publish_date'], game_data['multiplayer'])
     end
+    games
   end
 
   def load_authors
     authors_data = load_data_from_json_file('./data/authors.json')
-    authors_data.map do |author_data|
+    authors = authors_data.map do |author_data|
       Author.new(author_data['first_name'], author_data['last_name'])
     end
+    authors
   end
 
   private
