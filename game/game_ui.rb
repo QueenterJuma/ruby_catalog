@@ -19,12 +19,12 @@ class GameUI
     puts 'Is it a multiplayer game? [y/n]'
     game_multiplayer = gets.chomp.downcase == 'y'
     @game_list.push Game.new(game_name, game_last_played_at, game_publish_date, game_multiplayer)
-    Save_game(@game_list)
+    save_game(@game_list)
     puts 'Please enter the author\'s first name and the last name of the game (e.g. “Stephen King”)'
     first_name = gets.chomp
     last_name = gets.chomp
     @author_list.push Author.new(first_name, last_name)
-    Save_author(@author_list)
+    save_author(@author_list)
     puts "\nNew game created successfully!\n"
   end
 
