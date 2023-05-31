@@ -17,8 +17,8 @@ end
 def options(app)
   option = gets.chomp.to_i
   case option
-  when 1
-    app.list_books
+  when 1 
+    app.books.list_all_books
   when 2
     app.list_music_albums
   when 3
@@ -28,9 +28,9 @@ def options(app)
   when 5
     app.list_authors
   when 6
-    app.list_labels
+    app.books.list_all_labels
   when 7
-    app.add_book
+    app.books.add_book
   when 8
     app.add_music_album
   when 9
@@ -52,6 +52,7 @@ def main
     list_options
     print 'Please select an option:'
     option = options(app)
-    break if option == 0
   end
 end
+
+main()
