@@ -2,7 +2,7 @@ require_relative 'book'
 require_relative 'item'
 require_relative 'label'
 require_relative 'books_ui'
-require_relative 'game/game_mod'
+require_relative 'game/game_ui'
 
 
 
