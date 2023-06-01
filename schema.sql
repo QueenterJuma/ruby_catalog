@@ -21,15 +21,13 @@ CREATE TABLE game(
   IDENTITY PRIMARY KEY,
   publish_date DATE,
   multiplayer VARCHAR(200),
-  last_played_at DATE
-  author_id INT REFERENCES
-  author(id),
+  last_played_at DATE,
+  author_id INT REFERENCES author(id)
 );
 
 --Create authors table--
 CREATE TABLE author(
-  id INT GENERATED ALWAYS AS
-  IDENTITY PRIMARY KEY,
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   first_name VARCHAR(200),
   last_name VARCHAR(200)
 );
@@ -48,8 +46,8 @@ CREATE TABLE musicalbum (
     on_spotify BOOLEAN,
     archived BOOLEAN,
     genre_id INT,
-    PRIMARY KEY(id)
-    CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genre(id),
+    PRIMARY KEY(id),
+    CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genre(id)
 );
 
 --book table--

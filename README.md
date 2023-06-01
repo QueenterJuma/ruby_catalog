@@ -1,10 +1,5 @@
 <a name="readme-top"></a>
 
-  <h3><b>[Catalog of my things] is a project at Microverse. It's an app that keeps records of books, games, and music album.
-  
-  Video Presntation link(https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2mdt-b4Kj/view?usp=drive_link)</b></h3>
-
-
 
 # 📗 Table of Contents
 
@@ -23,7 +18,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Catalog of my things] <a name="is app that keeps records of books, games, and music album in Ruby language"></a>
+# 📖 [Catalog of my things] <a name="is app that keeps records of books, games, and music album in Ruby language"
+
+Video Presntation link(https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2mdt-b4Kj/view?usp=sharing)></a>
 
 
 **[Catalog of my things]** is based on Ruby Language.

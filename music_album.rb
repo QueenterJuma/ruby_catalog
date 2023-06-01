@@ -33,7 +33,7 @@ class MusicAlbum < Item
       data['genre'],
       data['author'],
       data['label'],
-      DateTime.strptime(data['publish_date'], '%Y-%m-%d'),
+      data['publish_date'],
       data['on_spotify']
     )
   end
