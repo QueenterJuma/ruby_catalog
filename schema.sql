@@ -33,3 +33,5 @@ CREATE TABLE author(
   first_name VARCHAR(200),
   last_name VARCHAR(200)
 );
+
+CREATE INDEX idx_games_author_id ON games (author_id);
