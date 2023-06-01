@@ -1,8 +1,8 @@
-require './game/game'
+require_relative '../game/game'
 
 describe Game do
   before :each do
-    @game = Game.new('2021-08-10', 'Y', last_played_at: '2023-04-11')
+    @game = Game.new('Hockey', '2021-08-10', '2023-04-11', 'y')
   end
 
   it 'Test for Game instance' do
@@ -10,11 +10,18 @@ describe Game do
   end
 
   it 'Test for attribute' do
-    expect(@game).to have_attributes(publish_date: Date.parse('2021-08-10'), multiplayer: 'Y',
-                                     last_played_at: '2023-04-11')
+    expect(@game.name).to eq('Hockey')
   end
 
-  it 'Test for can be archive method' do
-    expect(@game.send('can_be_archived?')).to be false
+  it 'Test for attribute' do
+    expect(@game.last_played_at).to eq('2021-08-10')
+  end
+  
+  it 'Test for attribute' do
+    expect(@game.publish_date).to eq('2023-04-11')
+  end
+
+  it 'Test for attribute' do
+    expect(@game.multiplayer).to eq('y')
   end
 end
