@@ -149,7 +149,7 @@ I would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 - **[What is School Library Project?]**
 
