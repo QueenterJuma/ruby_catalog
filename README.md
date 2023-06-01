@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>School Library</b></h3>
+  <h3><b>[Catalog of my things] is a project at Microverse. It's an app that keeps records of books, games, and music album.</b></h3>
 
 </div>
 

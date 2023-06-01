@@ -90,7 +90,6 @@ class App
 
   def save_json_data(file_name, data)
     File.write(file_name, JSON.pretty_generate(data))
-    puts 'Data saved successfully!'
   end
 
   def find_genre(name)

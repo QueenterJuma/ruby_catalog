@@ -19,7 +19,7 @@ class BooksUI
     title = gets.chomp
     puts 'Please enter the Label Color'
     color = gets.chomp
-    book = Book.new(publisher, cover_state, publish_date)
+    book = Book.new(publish_date, publisher, cover_state)
     @books.push(book)
     label = Label.new(title, color)
     @labels.push(label)
@@ -35,7 +35,7 @@ class BooksUI
   def save_books
     books = @books.each_with_index.map do |book, index|
       {
-        publish_date: book.publish_date, publisher: book.publisher, cover_state: book.cover_state, index: index
+        publisher: book.publisher, publish_date: book.publish_date, cover_state: book.cover_state, index: index
       }
     end
     File.write('./data/books.json', JSON.generate(books))

@@ -42,8 +42,6 @@ def options1(app, choice)
   when 0
     app.save_data
     exit
-  else
-    puts 'Invalid option, please type correct number!'
   end
 end
 
