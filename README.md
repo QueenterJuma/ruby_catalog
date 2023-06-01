@@ -1,8 +1,10 @@
 <a name="readme-top"></a>
 
-  <h3><b>[Catalog of my things] is a project at Microverse. It's an app that keeps records of books, games, and music album.</b></h3>
+  <h3><b>[Catalog of my things] is a project at Microverse. It's an app that keeps records of books, games, and music album.
+  
+  Video Presntation link: https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2mdt-b4Kj/view?usp=drive_link</b></h3>
 
-</div>
+
 
 # 📗 Table of Contents
 
@@ -21,10 +23,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [School Library] <a name="is school library app in Ruby language"></a>
+# 📖 [Catalog of my things] <a name="is app that keeps records of books, games, and music album in Ruby language"></a>
 
 
-**[School Library]** is based on Ruby Language.
+**[Catalog of my things]** is based on Ruby Language.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +49,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href=#>N/A</a></li>
+    <li><a href=#>Local Storage</a></li>
   </ul>
 </details>
 
@@ -61,7 +63,7 @@
 
 To get a local copy up and running, follow these steps.
 
-- clone this repo:git@github.com:dheerajsachdeva/school-library-ruby.git
+- clone this https://github.com/QueenterJuma/ruby_catalog.git
 
 
 ### Prerequisites
@@ -76,7 +78,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 <ul>
 <li>cd my-folder</li>
-<li>git clone git@github.com:dheerajsachdeva/school-library-ruby.git</li>
+<li>git clone https://github.com/QueenterJuma/ruby_catalog.git</li>
 </ul>
 
 ### Install
@@ -101,11 +103,16 @@ Run: rspec to tun tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-👤 **Shubham Bhoyar**
-
-- GitHub: [@shubhambhoyar077](https://github.com/shubhambhoyar077)
 
 ## 👥 Authors <a name="DHEERAJ SACHDEVA"></a>
+
+👤 **Queenter Juma**
+
+- GitHub: [@QueenterJuma](https://github.com/QueenterJuma)
+
+👤 **Heldricks Adhola**
+
+- GitHub: [@Adholah96](https://github.com/Adholah96)
 
 👤 **DHEERAJ SACHDEVA**
 
@@ -120,7 +127,7 @@ Run: rspec to tun tests
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[More conditional checking will be added in future]**
+- [ ] **[More conditional checking and features will be added in future]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,7 +136,7 @@ Run: rspec to tun tests
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [repo:git@github.com:dheerajsachdeva/school-library-ruby.git]
+Feel free to check the [repo:https://github.com/QueenterJuma/ruby_catalog.git]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,7 +156,7 @@ I would like to thank Microverse.
 
 - **[What is School Library Project?]**
 
-  - [In this project, we will create a school library to add, create book and show list of books on rental]
+  - [In this project, we will create an app that keeps records of books, games, and music album.]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
