@@ -34,4 +34,40 @@ CREATE TABLE author(
   last_name VARCHAR(200)
 );
 
+--create genre table--
+CREATE TABLE genre(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name VARCHAR(200)
+);
+
+--music_album table--
+
+CREATE TABLE musicalbum (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    publish_date DATE,
+    on_spotify BOOLEAN,
+    archived BOOLEAN,
+    genre_id INT,
+    PRIMARY KEY(id)
+    CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genre(id),
+);
+
+--book table--
+
+CREATE TABLE  book (
+  id INT PRIMARY KEY REFERENCES item(id),
+  publisher VARCHAR(40),
+  cover_state VARCHAR(30)
+);
+
+--label table--
+
+CREATE TABLE label (
+  id INT PRIMARY KEY,
+  title VARCHAR(30),
+  color VARCHAR(20)
+);
+
 CREATE INDEX idx_games_author_id ON games (author_id);
+CREATE INDEX idx_musicalbum_genre_id ON musicalbum (genre_id);
+CREATE INDEX idx_book_label_id ON book (label_id);

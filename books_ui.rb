@@ -2,28 +2,28 @@ require_relative 'book'
 require 'json'
 require_relative 'label'
 
-class Books_UI
+class BooksUI
   def initialize
     @books = []
     @labels = []
   end
 
   def add_book
-    puts "Please enter Publisher Name:"
+    puts 'Please enter Publisher Name:'
     publisher = gets.chomp
-    puts "Please enter the Cover State (good or bad)"
+    puts 'Please enter the Cover State (good or bad)'
     cover_state = gets.chomp
-    puts "Enter Publish date in year-month-date(2020-05-23) format"
+    puts 'Enter Publish date in year-month-date(2020-05-23) format'
     publish_date = gets.chomp
-    puts "Please enter Label Title:"
+    puts 'Please enter Label Title:'
     title = gets.chomp
-    puts "Please enter the Label Color"
+    puts 'Please enter the Label Color'
     color = gets.chomp
     book = Book.new(publisher, cover_state, publish_date)
     @books.push(book)
     label = Label.new(title, color)
     @labels.push(label)
-    puts "Book Created Successfully"
+    puts 'Book Created Successfully'
   end
 
   def list_all_books
@@ -38,13 +38,13 @@ class Books_UI
         publish_date: book.publish_date, publisher: book.publisher, cover_state: book.cover_state, index: index
       }
     end
-    File.write('books.json', JSON.generate(books))
+    File.write('./data/books.json', JSON.generate(books))
   end
 
   def load_books
-    return [] unless File.exist?('books.json')
+    return [] unless File.exist?('./data/books.json')
 
-    file = File.open('books.json')
+    file = File.open('./data/books.json')
     read_file = File.read(file)
     json = JSON.parse(read_file)
 
@@ -68,13 +68,13 @@ class Books_UI
         index: index, title: label.title, color: label.color
       }
     end
-    File.write("labels.json", JSON.generate(labels))
+    File.write('./data/labels.json', JSON.generate(labels))
   end
 
   def load_labels
-    return [] unless File.exist?('labels.json')
+    return [] unless File.exist?('./data/labels.json')
 
-    file = File.open('labels.json')
+    file = File.open('./data/labels.json')
     read_file = File.read(file)
     json = JSON.parse(read_file)
 

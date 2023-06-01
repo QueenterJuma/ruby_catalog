@@ -1,0 +1,22 @@
+[
+  {
+    "id": 109,
+    "genre": {
+      "name": "bre"
+    },
+    "author": "gree",
+    "label": "dkskks",
+    "publish_date": "2020-11-11T00:00:00+00:00",
+    "on_spotify": true
+  },
+  {
+    "id": 888,
+    "genre": {
+      "name": "aa"
+    },
+    "author": "cc",
+    "label": "fff",
+    "publish_date": "1234-12-12T00:00:00+00:00",
+    "on_spotify": true
+  }
+]
