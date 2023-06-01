@@ -5,6 +5,7 @@ require_relative 'books_ui'
 require_relative 'game/game_ui'
 require_relative 'music_album'
 require_relative 'genre'
+require 'json'
 
 
 
@@ -39,7 +40,6 @@ class App
       puts "Label: #{album.label}"
       puts "Publish Date: #{album.publish_date}"
       puts "On Spotify: #{album.on_spotify}"
-      puts "Can be archived? #{album.can_be_archived?}"
       puts "-----------------------------------"
     end
   end
@@ -69,7 +69,7 @@ class App
         @genres << genre
     end
 
-    music_album = MusicAlbum.new(genre, author, label, DateTime.parse(publish_date), on_spotify)
+    music_album = MusicAlbum.new(genre, author, label, publish_date, on_spotify)
     @music_albums << music_album
     music_album.genre = genre
     puts "Music album added successfully!"

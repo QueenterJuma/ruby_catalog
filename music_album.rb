@@ -5,14 +5,16 @@ class MusicAlbum < Item
   attr_accessor :on_spotify, :id, :author, :label, :publish_date, :genre
 
   def initialize(genre, author, label, publish_date, on_spotify)
-    super(genre, author, label, publish_date)
+    super(publish_date)
     @id = id
     @genre = genre
+    @author = author
+    @label = label
     @on_spotify = on_spotify
   end
 
   def can_be_archived?
-    super && @on_spotify
+    super || @on_spotify
   end
 
   def to_json(*_args)
