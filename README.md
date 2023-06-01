@@ -2,7 +2,7 @@
 
   <h3><b>[Catalog of my things] is a project at Microverse. It's an app that keeps records of books, games, and music album.
   
-  Video Presntation link: https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2mdt-b4Kj/view?usp=drive_link</b></h3>
+  Video Presntation link(https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2mdt-b4Kj/view?usp=drive_link)</b></h3>
 
 
 
