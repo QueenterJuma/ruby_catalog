@@ -17,16 +17,16 @@ end
 def options(app)
   option = gets.chomp.to_i
   case option
-  when 1 
+  when 1
     app.books.list_all_books
   when 2
     app.list_music_albums
   when 3
-    app.list_games
+    app.game.game_list
   when 4
     app.list_genres
   when 5
-    app.list_authors
+    app.game.author_list
   when 6
     app.books.list_all_labels
   when 7
@@ -34,7 +34,7 @@ def options(app)
   when 8
     app.add_music_album
   when 9
-    app.add_game
+    app.game.create_game
   when 0
     app.save_data
     exit
