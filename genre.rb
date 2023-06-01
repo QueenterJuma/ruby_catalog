@@ -15,10 +15,10 @@ class Genre
     @name
   end
 
-  def to_json(*_args)
+  def to_json(*args)
     {
       name: @name
-    }.to_json(*_args)
+    }.to_json(*args)
   end
 
   def self.from_json(json)
@@ -26,11 +26,11 @@ class Genre
     genre = new(data['name'])
 
     items_json = data['items']
-    if items_json && items_json.is_a?(Array)
-        items_json.each do |item_json|
-            item = Item.from_json(item_json)
-            genre.add_item(item) if item
-        end
+    if items_json.is_a?(Array)
+      items_json.each do |item_json|
+        item = Item.from_json(item_json)
+        genre.add_item(item) if item
+      end
     end
     genre
   end

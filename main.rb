@@ -1,22 +1,21 @@
 require_relative 'app'
 
 def list_options
-  puts "Please select an option:"
-  puts "1. List all books"
-  puts "2. List all music albums"
-  puts "3. List all games"
-  puts "4. List all genres"
-  puts "5. List all authors"
-  puts "6. List all labels"
-  puts "7. Add a book"
-  puts "8. Add a music album"
-  puts "9. Add a game"
-  puts "0 - Exit"
+  puts 'Please select an option:'
+  puts '1. List all books'
+  puts '2. List all music albums'
+  puts '3. List all games'
+  puts '4. List all genres'
+  puts '5. List all authors'
+  puts '6. List all labels'
+  puts '7. Add a book'
+  puts '8. Add a music album'
+  puts '9. Add a game'
+  puts '0 - Exit'
 end
 
-def options(app)
-  option = gets.chomp.to_i
-  case option
+def options(app, choice)
+  case choice
   when 1
     app.books.list_all_books
   when 2
@@ -29,6 +28,11 @@ def options(app)
     app.game.author_list
   when 6
     app.books.list_all_labels
+  end
+end
+
+def options1(app, choice)
+  case choice
   when 7
     app.books.add_book
   when 8
@@ -43,16 +47,21 @@ def options(app)
   end
 end
 
+def selection(app, choice)
+  options(app, choice)
+  options1(app, choice)
+end
+
 def main
   app = App.new
   app.load_data
   puts 'Welcome to our App..'
-
   loop do
     list_options
     print 'Please select an option:'
-    option = options(app)
+    choice = gets.chomp.to_i
+    selection(app, choice)
   end
 end
 
-main()
+main

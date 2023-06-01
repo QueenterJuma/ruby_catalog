@@ -34,7 +34,7 @@ class GameUI
     else
       puts "\nGame List:\n"
       @game_list.each do |game|
-        puts "Name: #{game.name}, Last Played At: #{game.last_played_at},'\'
+        puts "Name: #{game.name}, Last Played At: #{game.last_played_at},''
         Publish Date: #{game.publish_date}, Multiplayer: #{game.multiplayer}\n"
       end
     end

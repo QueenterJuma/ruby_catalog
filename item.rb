@@ -33,14 +33,15 @@ class Item
   def move_to_archive
     @archived = can_be_archived?
   end
-   def to_json(*_args)
+
+  def to_json(*args)
     {
       id: @id,
       genre: @genre,
       author: @author,
       label: @label,
       publish_date: @publish_date
-    }.to_json(*_args)
+    }.to_json(*args)
   end
 
   def self.from_json(json)

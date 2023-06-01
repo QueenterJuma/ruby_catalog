@@ -13,7 +13,7 @@ class App
   attr_accessor :books, :labels, :game
 
   def initialize
-    @books = Books_UI.new
+    @books = BooksUI.new
     @game = GameUI.new
     @genres = []
     @music_albums = []
@@ -32,7 +32,8 @@ class App
     @genres = load_json_data('./data/genres.json', Genre)
     @music_albums = load_json_data('./data/music_albums.json', MusicAlbum)
   end
-   def list_music_albums
+
+  def list_music_albums
     @music_albums.each do |album|
       puts "ID: #{album.id}"
       puts "Genre: #{album.genre}"
@@ -40,39 +41,39 @@ class App
       puts "Label: #{album.label}"
       puts "Publish Date: #{album.publish_date}"
       puts "On Spotify: #{album.on_spotify}"
-      puts "-----------------------------------"
+      puts '-----------------------------------'
     end
   end
 
   def list_genres
-    puts "Genre: "
+    puts 'Genre: '
     @genres.each do |genre|
       puts "'#{genre.name}'"
     end
   end
 
   def add_music_album
-    puts "Enter Genre:"
+    puts 'Enter Genre:'
     genre_name = gets.chomp
-    puts "Enter Author:"
+    puts 'Enter Author:'
     author = gets.chomp
-    puts "Enter Label:"
+    puts 'Enter Label:'
     label = gets.chomp
-    puts "Enter Publish Date (YYYY-MM-DD):"
+    puts 'Enter Publish Date (YYYY-MM-DD):'
     publish_date = gets.chomp
-    puts "Is it on Spotify? (true/false):"
+    puts 'Is it on Spotify? (true/false):'
     on_spotify = gets.chomp.downcase == 'true'
 
     genre = find_genre(genre_name)
     if genre.nil?
-        genre = Genre.new(genre_name)
-        @genres << genre
+      genre = Genre.new(genre_name)
+      @genres << genre
     end
 
     music_album = MusicAlbum.new(genre, author, label, publish_date, on_spotify)
     @music_albums << music_album
     music_album.genre = genre
-    puts "Music album added successfully!"
+    puts 'Music album added successfully!'
   end
 
   private
@@ -81,7 +82,7 @@ class App
     if File.exist?(file_name)
       json_data = File.read(file_name)
       items = JSON.parse(json_data).map { |item_json| class_type.from_json(JSON.generate(item_json)) }
-      return items.compact
+      items.compact
     else
       []
     end
@@ -89,7 +90,7 @@ class App
 
   def save_json_data(file_name, data)
     File.write(file_name, JSON.pretty_generate(data))
-    puts "Data saved successfully!"
+    puts 'Data saved successfully!'
   end
 
   def find_genre(name)

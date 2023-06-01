@@ -1,4 +1,3 @@
-
 require_relative 'item'
 
 class MusicAlbum < Item
@@ -17,7 +16,7 @@ class MusicAlbum < Item
     super || @on_spotify
   end
 
-  def to_json(*_args)
+  def to_json(*args)
     {
       id: @id,
       genre: @genre,
@@ -25,7 +24,7 @@ class MusicAlbum < Item
       label: @label,
       publish_date: @publish_date,
       on_spotify: @on_spotify
-    }.to_json(*_args)
+    }.to_json(*args)
   end
 
   def self.from_json(json)
