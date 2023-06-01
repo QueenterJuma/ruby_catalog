@@ -7,8 +7,6 @@ require_relative 'music_album'
 require_relative 'genre'
 require 'json'
 
-
-
 class App
   attr_accessor :books, :labels, :game
 
