@@ -16,7 +16,7 @@ describe Game do
   it 'Test for attribute' do
     expect(@game.last_played_at).to eq('2021-08-10')
   end
-  
+
   it 'Test for attribute' do
     expect(@game.publish_date).to eq('2023-04-11')
   end
