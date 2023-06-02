@@ -54,7 +54,7 @@ Video Presntation link(https://drive.google.com/file/d/1tBGtpw2K507swHiRJKkgwyR2
 
 - **[Create classes and inheritence added]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -98,7 +98,7 @@ To run tests, run the following command: Install through : gem install rspec
 
 Run: rspec to tun tests
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 
 ## 👥 Authors <a name="DHEERAJ SACHDEVA"></a>
@@ -117,7 +117,7 @@ Run: rspec to tun tests
 - Twitter: [@twitterhandle](https://twitter.com/dheerajarya)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/dheeraj-sachdeva-502b2b8/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 <!-- FUTURE FEATURES -->
 
@@ -127,7 +127,7 @@ Run: rspec to tun tests
 - [ ] **[More conditional checking and features will be added in future]**
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -135,19 +135,19 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [repo:https://github.com/QueenterJuma/ruby_catalog.git]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please follow me on github
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## ❓ FAQ <a name="faq"></a>
 
@@ -156,10 +156,10 @@ I would like to thank Microverse.
   - [In this project, we will create an app that keeps records of books, games, and music album.]
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top"></a>)</p>
